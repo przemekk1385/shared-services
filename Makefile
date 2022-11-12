@@ -8,7 +8,7 @@ network-rm:
 	docker network rm shared_services
 
 up:
-	doppler run -- docker compose up -d
+	doppler run -- docker-compose up -d
 
 down:
-	doppler run -- docker compose down
+	doppler run -- docker-compose down
