@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    networks:
+      - shared_services
+    volumes:
+      - db_volume:/var/lib/postgresql/data
+
+
+networks:
+  shared_services:
+    external: true
+
+volumes:
+  db_volume:
