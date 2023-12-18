@@ -20,17 +20,3 @@ Remove `shared_services` network:
 ```
 ~ make network-rm
 ```
-
-Run services:
-
-```
-~ make up
-```
-
-Stop services:
-
-```
-~ make down
-```
-
-Last two commands assumes using [Doppler](https://www.doppler.com) for secrets management.
